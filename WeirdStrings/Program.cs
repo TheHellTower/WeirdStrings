@@ -55,17 +55,15 @@ namespace WeirdStrings
                         {
                             string MyEncodedString = Convert.ToBase64String(Encoding.UTF8.GetBytes(Instruction.Operand.ToString())).Replace("=", "*");
 
-                            string originalMethodName = NewMethodName; //Shhht don't worry
-                            string modifiedMethodName = originalMethodName + MyEncodedString;
+                            string ModifiedMethodName = NewMethodName + MyEncodedString;
 
-                            int X = originalMethodName.Length;
-                            int Y = modifiedMethodName.Length;
+                            int X = NewMethodName.Length;
+                            int Y = ModifiedMethodName.Length;
 
                             Console.WriteLine($"Processing String: \"{MyEncodedString}\", X={X} & Y={Y}");
 
                             NewMethodName += MyEncodedString; //Remember, X & Y are positions !
-                            originalMethodName += MyEncodedString; //Obviously to make it work..
-
+                            
                             Instruction.OpCode = OpCodes.Call;
                             Instruction.Operand = GetStringMethod; //String replaced by our Method
 
