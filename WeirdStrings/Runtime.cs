@@ -8,7 +8,7 @@ namespace WeirdStrings
     internal static class Runtime
     {
         //X = Pos Start & Y = Pos End so Start of string and End of string.
-        internal static string TheHellTower(int x, int y)
+        internal static string TheHellTower(this int x, int y)
         {
             if(Assembly.GetCallingAssembly() == Assembly.GetExecutingAssembly())
             {
