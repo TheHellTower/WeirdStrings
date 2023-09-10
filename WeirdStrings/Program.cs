@@ -15,13 +15,13 @@ namespace WeirdStrings
         {
             Module = ModuleDefMD.Load(args[0]);
 
-            String(Module); //Processing Strings
+            Strings(Module); //Processing Strings
             Watermark(Module); //Adding Aid Watermark
 
             Module.Write(Module.Location.Insert(Module.Location.Length - 4, "-WeirdStrings"));
         }
 
-        private static void String(ModuleDefMD module)
+        private static void Strings(ModuleDefMD module)
         {
             //Runtime Type
             Type MyType = typeof(Runtime);
