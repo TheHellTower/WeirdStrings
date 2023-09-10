@@ -20,7 +20,7 @@ This will hide the strings(`in a dumb way`)
 [![](https://i.imgur.com/Osecnrt.png)](https://youtu.be/IvEPwImbxUo)
 ## 🌟 Stars
 
-- None
+- [ ] 10🌟| [Updated Anti-Invoke](https://github.com/TheHellTower/WeirdStrings/blob/master/README.md?plain=1#L15)
 
 ## 📚 FAQ
 
