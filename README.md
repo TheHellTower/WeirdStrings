@@ -58,7 +58,3 @@ This will hide the strings(`in a dumb way`)
 
     Note: Only for questions no code support.
 </details>
-
-# 📢 Credits
-
-- [@DarkBullNull](https://github.com/DarkBullNull) for [VMP.NET-Kill](https://github.com/DarkBullNull/VMP.NET-Kill)
