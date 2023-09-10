@@ -125,7 +125,6 @@ namespace WeirdStrings
                     Field.CustomAttributes.Add(attr);
                 foreach (EventDef Event in Type.Events.Where(E => !E.DeclaringType.IsForwarder && !E.IsRuntimeSpecialName))
                     Event.CustomAttributes.Add(attr);
-
             }
         }
     }
