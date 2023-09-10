@@ -15,13 +15,13 @@ namespace WeirdStrings
         {
             Module = ModuleDefMD.Load(args[0]);
 
-            Strings(Module); //Processing Strings
-            Watermark(Module); //Adding Aid Watermark
+            Strings(); //Processing Strings
+            Watermark(); //Adding Aid Watermark
 
             Module.Write(Module.Location.Insert(Module.Location.Length - 4, "-WeirdStrings"));
         }
 
-        private static void Strings(ModuleDefMD module)
+        private static void Strings()
         {
             //Runtime Type
             Type MyType = typeof(Runtime);
@@ -82,7 +82,7 @@ namespace WeirdStrings
         }
 
         //Not really the important part so will not comment
-        private static void Watermark(ModuleDefMD Module)
+        private static void Watermark()
         {
             var attrName = "WeirdStringsBy";
             var attrRef = Module.CorLibTypes.GetTypeRef("System", "Attribute");
